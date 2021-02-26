@@ -66,3 +66,14 @@ class vec3:
     @classmethod
     def from_tuple(cls, t1):
         return cls(t1[0], t1[1], t1[2])
+
+
+class vec4():
+    def __init__(self, x=0, y=0, z=0, w=1):
+        self.x = x
+        self.y = y
+        self.z = z
+        self.w = w
+
+    def __repr__(self):
+        return "vec4 object({},{},{},{})".format(self.x, self.y, self.z, self.w)
